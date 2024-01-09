@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Http\Controllers\employeeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\employeeController;
 
@@ -17,5 +17,7 @@ use App\Http\Controllers\employeeController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('employee',[employeeController::class,'index']);
+/*Route::get('employee',[employeeController::class,'index']);
 Route::post('employee-form',[employeeController::class,'store']);
+
+Route::get('get_employees',[employeeController::class,'get_employees']);*/
